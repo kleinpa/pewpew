@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="pewpew" ng-controller="PewPewController">
+  <head>
+    <title>Laser Thing</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css">
+    <script yupe="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.js"></script>
+    <script yupe="text/javascript" src="index.js"></script>
+  </head>
+  <body ng-mousemove="move($event)" ng-keypress="keypress($event)">
+    <div class="row">
+      <div class="large-12 columns">
+	      <h1>PewPew</h1>
+        r: {{r}} <br>
+        i: {{i}} <br>
+        p: {{p}}
+      </div>
+    </div>
+  </body>
+</html>

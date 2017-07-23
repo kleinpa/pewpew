@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="pewpew" ng-controller="PewPewController">
+  <head>
+    <title>PewPew Touch</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.js"></script>
+    <script type="text/javascript" src="orientation.js"></script>
+    <script type="text/javascript" src="ngTouchStartEnd.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  </head>
+  <body >
+    <div class="row">
+      <div class="large-12 columns">
+	      <h1 ng-touchstart="power(255);" ng-touchend="power(0);">Laser Thing</h1>
+        r: {{r}} <br>
+        i: {{i}} <br>
+        p: {{p}}
+      </div>
+    </div>
+  </body>
+</html>
